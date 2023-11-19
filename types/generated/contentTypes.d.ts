@@ -745,18 +745,6 @@ export interface ApiAboutAbout extends Schema.SingleType {
           localized: true;
         };
       }>;
-    readMore: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    contact: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     headshot: Attribute.Media &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -794,6 +782,7 @@ export interface ApiContactContact extends Schema.SingleType {
     singularName: 'contact';
     pluralName: 'contacts';
     displayName: 'Contact';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -805,36 +794,6 @@ export interface ApiContactContact extends Schema.SingleType {
   };
   attributes: {
     content: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    namePrompt: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    emailPrompt: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    phonePrompt: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    messagePrompt: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    submit: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -908,6 +867,13 @@ export interface ApiProjectProject extends Schema.CollectionType {
         };
       }>;
     picture: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    slug: Attribute.String &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
