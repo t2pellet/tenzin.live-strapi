@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_timeline_content_schools",
+  "info": {
+    "displayName": "School"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "major": {
+      "type": "string"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    }
+  }
+}

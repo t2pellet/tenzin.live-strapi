@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_other_continue_links",
+  "info": {
+    "displayName": "ContinueLink"
+  },
+  "options": {},
+  "attributes": {
+    "continueText": {
+      "type": "text"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section.section"
+    }
+  }
+}

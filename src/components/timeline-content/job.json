@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_timeline_content_jobs",
+  "info": {
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.icon"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_other_icons",
+  "info": {
+    "displayName": "Icon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "customField",
+      "customField": "plugin::react-icons.icon"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
