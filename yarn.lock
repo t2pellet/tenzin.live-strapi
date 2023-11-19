@@ -1828,6 +1828,25 @@
     prop-types "^15.8.1"
     react-remove-scroll "^2.5.7"
 
+"@strapi/design-system@^1.6.3":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@strapi/design-system/-/design-system-1.13.1.tgz#42d1c7b054e3d0f19ba707b5f2e10cc0d2eba280"
+  integrity sha512-mtfONSTZmOKd0Mvb1NGEYx5qaA4uDPqx5q3/67kDSK2mkfjEe3j69SoQ6ONt/glvsidclWtez6R1aJmF5cojRg==
+  dependencies:
+    "@codemirror/lang-json" "^6.0.1"
+    "@floating-ui/react-dom" "^2.0.2"
+    "@internationalized/date" "^3.5.0"
+    "@internationalized/number" "^3.3.0"
+    "@radix-ui/react-dismissable-layer" "^1.0.5"
+    "@radix-ui/react-dropdown-menu" "^2.0.6"
+    "@radix-ui/react-focus-scope" "1.0.4"
+    "@strapi/ui-primitives" "^1.13.1"
+    "@uiw/react-codemirror" "^4.21.20"
+    aria-hidden "^1.2.3"
+    compute-scroll-into-view "^3.1.0"
+    prop-types "^15.8.1"
+    react-remove-scroll "^2.5.7"
+
 "@strapi/generate-new@4.15.0":
   version "4.15.0"
   resolved "https://registry.yarnpkg.com/@strapi/generate-new/-/generate-new-4.15.0.tgz#97aeed798ebd95ce46368c1b4b2092b1bcbecb87"
@@ -1876,10 +1895,31 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
+"@strapi/helper-plugin@^4.6.0":
+  version "4.15.4"
+  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.15.4.tgz#3de01237f5c89e58a9d34fd402e8fd9110fc53e4"
+  integrity sha512-JMPlV1T1W7NKIqiik3GoxUDXwfRjkfY9WIwZhWXb2F2Bubw4Akcm9aEmyGobApIdvK7XpRCt5Bp7IQkbnpQLFg==
+  dependencies:
+    axios "1.5.0"
+    date-fns "2.30.0"
+    formik "2.4.0"
+    immer "9.0.19"
+    lodash "4.17.21"
+    qs "6.11.1"
+    react-helmet "6.1.0"
+    react-intl "6.4.1"
+    react-query "3.39.3"
+    react-select "5.7.0"
+
 "@strapi/icons@1.13.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.13.0.tgz#0020560b5bed008ddc39aa177b264cb3bebe8b67"
   integrity sha512-bmFJvyM75nuVyJVq4bgHxRYwu9eEkmRKNipEb/GBTBvvkHGN0GTHLOAedGpKGvB7RwcclbaymOP7oBlxahOmsw==
+
+"@strapi/icons@^1.6.3":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.13.1.tgz#372d0961802eaf80a400a7cb8fb197139312b6a4"
+  integrity sha512-5JOCwNnnXHuMUFO987bdM1uxRlg3oCo4/nruXQiMTviQFulWnPR5eQKUTRf3IyK5acr1Nn+KU/+fkJJSLOjxFA==
 
 "@strapi/logger@4.15.0":
   version "4.15.0"
@@ -2184,6 +2224,33 @@
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@strapi/ui-primitives/-/ui-primitives-1.13.0.tgz#9a290995ee8884c2dbbf7fc5e62a20973fc11402"
   integrity sha512-7wWKHfWyuObfjKH2cr0TkizMndkUpCKYYxg/GvIH6fRubjomYN3TQgxixz5rWUx/azGxgtp4CtW7baYBXV+mlw==
+  dependencies:
+    "@radix-ui/number" "^1.0.1"
+    "@radix-ui/primitive" "^1.0.1"
+    "@radix-ui/react-collection" "1.0.3"
+    "@radix-ui/react-compose-refs" "^1.0.1"
+    "@radix-ui/react-context" "^1.0.1"
+    "@radix-ui/react-direction" "1.0.1"
+    "@radix-ui/react-dismissable-layer" "^1.0.5"
+    "@radix-ui/react-focus-guards" "1.0.1"
+    "@radix-ui/react-focus-scope" "1.0.4"
+    "@radix-ui/react-id" "^1.0.1"
+    "@radix-ui/react-popper" "^1.1.3"
+    "@radix-ui/react-portal" "^1.0.4"
+    "@radix-ui/react-primitive" "^1.0.3"
+    "@radix-ui/react-slot" "^1.0.2"
+    "@radix-ui/react-use-callback-ref" "^1.0.1"
+    "@radix-ui/react-use-controllable-state" "^1.0.1"
+    "@radix-ui/react-use-layout-effect" "1.0.1"
+    "@radix-ui/react-use-previous" "^1.0.1"
+    "@radix-ui/react-visually-hidden" "^1.0.3"
+    aria-hidden "^1.2.3"
+    react-remove-scroll "^2.5.7"
+
+"@strapi/ui-primitives@^1.13.1":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@strapi/ui-primitives/-/ui-primitives-1.13.1.tgz#3f276b3fa7a6ad1314f516f692ac4fbcb5d5a199"
+  integrity sha512-HRBKU823VKuc31QCIPQptU0TQ1hwtdOzlISxHCqgPeWL3Qq33vehPc1gxxxfXh9DfZmga8Fv14g8X/1rEgDpSQ==
   dependencies:
     "@radix-ui/number" "^1.0.1"
     "@radix-ui/primitive" "^1.0.1"
@@ -8256,6 +8323,11 @@ react-helmet@6.1.0, react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
+react-icons@4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.8.0.tgz#621e900caa23b912f737e41be57f27f6b2bff445"
+  integrity sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==
+
 react-intl@6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-6.4.1.tgz#01e4bd5497cb93d87146e966d8eda25851d4d9b6"
@@ -9285,6 +9357,17 @@ std-env@^3.0.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.1.tgz#93a81835815e618c8aa75e7c8a4dc04f7c314e29"
   integrity sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==
+
+strapi-plugin-react-icons@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-react-icons/-/strapi-plugin-react-icons-0.2.1.tgz#018b5ee119afca37908421e103fc85c308d94083"
+  integrity sha512-LblieTF3PWJle8sYxuIu35O4VT+phfGkk9i9ZfMVFCRDv/hULemVSU9XsRPwbjYk/QEo8UnoWTjoTU4DwXsLeA==
+  dependencies:
+    "@strapi/design-system" "^1.6.3"
+    "@strapi/helper-plugin" "^4.6.0"
+    "@strapi/icons" "^1.6.3"
+    prop-types "^15.8.1"
+    react-icons "4.8.0"
 
 stream-chain@2.2.5, stream-chain@^2.2.5:
   version "2.2.5"
