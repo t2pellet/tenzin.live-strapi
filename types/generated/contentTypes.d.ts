@@ -799,6 +799,12 @@ export interface ApiContactContact extends Schema.SingleType {
           localized: true;
         };
       }>;
+    links: Attribute.Component<'other.icon', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
