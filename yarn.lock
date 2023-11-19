@@ -9451,6 +9451,11 @@ strapi-plugin-copy-locales@^1.0.1:
     react-redux "8.0.5"
     redux "^4.2.1"
 
+strapi-plugin-populate-deep@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-populate-deep/-/strapi-plugin-populate-deep-3.0.1.tgz#cd8f9853dc6e9a1859bdcc0176323a29bd2b8509"
+  integrity sha512-7t1bPPBN1AGKZlFT/6qsqmwgd7SzTA9CNzEBSzeYEjL/e0GKD2lf4wF11C2vMkfsQW2GhRAXZQRCGlLnV2XHFQ==
+
 strapi-plugin-react-icons@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/strapi-plugin-react-icons/-/strapi-plugin-react-icons-0.2.1.tgz#018b5ee119afca37908421e103fc85c308d94083"
