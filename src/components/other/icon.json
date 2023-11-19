@@ -8,9 +8,13 @@
   "attributes": {
     "icon": {
       "type": "customField",
-      "customField": "plugin::react-icons.icon"
+      "customField": "plugin::react-icons.icon",
+      "required": true
     },
     "title": {
+      "type": "string"
+    },
+    "href": {
       "type": "string"
     }
   }

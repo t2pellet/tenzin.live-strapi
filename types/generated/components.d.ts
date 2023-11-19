@@ -22,8 +22,11 @@ export interface OtherIcon extends Schema.Component {
     description: '';
   };
   attributes: {
-    icon: Attribute.String & Attribute.CustomField<'plugin::react-icons.icon'>;
+    icon: Attribute.String &
+      Attribute.Required &
+      Attribute.CustomField<'plugin::react-icons.icon'>;
     title: Attribute.String;
+    href: Attribute.String;
   };
 }
 
