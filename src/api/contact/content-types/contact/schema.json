@@ -23,6 +23,16 @@
         }
       },
       "type": "richtext"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "other.icon"
     }
   }
 }
