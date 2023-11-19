@@ -847,7 +847,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Description: Attribute.RichText &
+    description: Attribute.RichText &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -857,13 +857,13 @@ export interface ApiProjectProject extends Schema.CollectionType {
     url: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     repo: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     picture: Attribute.Media &
@@ -1018,6 +1018,7 @@ export interface ApiSkillSkill extends Schema.SingleType {
     singularName: 'skill';
     pluralName: 'skills';
     displayName: 'Skill';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1037,7 +1038,7 @@ export interface ApiSkillSkill extends Schema.SingleType {
     skills: Attribute.Component<'other.icon', true> &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     createdAt: Attribute.DateTime;
