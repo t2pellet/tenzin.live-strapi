@@ -829,6 +829,68 @@ export interface ApiContactContact extends Schema.SingleType {
   };
 }
 
+export interface ApiLinksLinks extends Schema.SingleType {
+  collectionName: 'linkss';
+  info: {
+    singularName: 'links';
+    pluralName: 'linkss';
+    displayName: 'Links';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    linkedin: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    github: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    resume: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::links.links',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::links.links',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::links.links',
+      'oneToMany',
+      'api::links.links'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -1129,6 +1191,7 @@ declare module '@strapi/types' {
       'plugin::react-icons.iconlibrary': PluginReactIconsIconlibrary;
       'api::about.about': ApiAboutAbout;
       'api::contact.contact': ApiContactContact;
+      'api::links.links': ApiLinksLinks;
       'api::project.project': ApiProjectProject;
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
